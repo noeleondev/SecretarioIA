@@ -31,44 +31,10 @@ colaborativo.
 
 ---
 
-## 📋 Requisitos
+## 🚀 Instalación Rápida (Solo 3 pasos)
 
-### Hardware mínimo
+### Paso 1: Clonar el repositorio
 
-| Componente | Mínimo | Recomendado |
-|------------|--------|-------------|
-| **CPU** | Gama 5 (Intel i5 / Ryzen 5) | Gama 7 (Intel i7 / Ryzen 7) |
-| **RAM** | 16 GB | 32 GB |
-| **Almacenamiento** | 10 GB libres | 20 GB libres |
-| **GPU** | Integrada | Dedicada (opcional) |
-
-### Software
-
-| Software | Versión | ¿Obligatorio? | Descarga |
-|----------|---------|---------------|----------|
-| **Python** | 3.11.9 | ✅ Sí | [python.org](https://www.python.org/downloads/release/python-3119/) |
-| **Git** | Última | ✅ Sí | [git-scm.com](https://git-scm.com/) |
-| **LM Studio** | Última | ✅ Sí | [lmstudio.ai](https://lmstudio.ai/) |
-| **Obsidian** | Última | ✅ Sí | [obsidian.md](https://obsidian.md/) |
-| **FFmpeg** | Última | 🟡 Opcional | [ffmpeg.org](https://ffmpeg.org/) |
-
----
-
-## 🚀 Instalación Rápida
-
-### Windows
-
-1. **Configurar** (solo la primera vez):
-   - Haz doble clic en `setup.bat`
-   - Espera a que termine
-   - Edita el archivo `.env` con tus datos (te lo pedirá el script)
-
-2. **Ejecutar** el bot:
-   - Haz doble clic en `run.bat`
-
-### Linux / Mac
-
-1. **Configurar** (solo la primera vez):
-   ```bash
-   chmod +x run.sh
-   ./run.sh
+```bash
+git clone https://github.com/noeleondev/SecretarioIA.git
+cd SecretarioIA/Scripts
