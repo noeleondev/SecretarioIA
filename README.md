@@ -1,6 +1,3 @@
-# 📝 README.md COMPLETO Y ORDENADO
-
-Copia **TODO** el contenido del bloque de abajo y pégalo en tu `README.md`:
 
 ```markdown
 # 🤖 Secretario IA V3
