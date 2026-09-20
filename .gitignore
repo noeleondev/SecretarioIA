@@ -18,6 +18,8 @@ __pycache__/
 # ========================
 # DATOS PESADOS / PRIVADOS
 # ========================
+# Almacenamiento de Obsidian (compartido, pero no se sube)
+Almacenamiento/vault/
 data/vault/
 data/temp/
 logs/
