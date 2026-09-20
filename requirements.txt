@@ -1,0 +1,23 @@
+# ============================================
+# DEPENDENCIAS DEL SECRETARIO IA V3
+# ============================================
+# Instalar con: pip install -r requirements.txt
+# ============================================
+
+# Bot de Telegram
+python-telegram-bot==20.3
+
+# Configuración
+pyyaml==6.0
+python-dotenv==1.0.0
+
+# Peticiones HTTP (para LM Studio)
+requests==2.31.0
+
+# Audio (opcional, para mensajes de voz)
+openai-whisper==20231117
+sounddevice==0.4.6
+soundfile==0.12.1
+
+# Utilidades
+schedule==1.2.0

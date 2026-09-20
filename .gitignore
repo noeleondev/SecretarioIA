@@ -1,0 +1,46 @@
+# ========================
+# SECRETOS (NUNCA SUBIR)
+# ========================
+.env
+*.env
+config/config.yaml
+
+# ========================
+# ENTORNO VIRTUAL
+# ========================
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ========================
+# DATOS PESADOS / PRIVADOS
+# ========================
+data/vault/
+data/temp/
+logs/
+*.log
+
+# ========================
+# MODELOS DE IA
+# ========================
+*.gguf
+*.bin
+*.safetensors
+
+# ========================
+# SISTEMA
+# ========================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ========================
+# IDE
+# ========================
+.vscode/
+.idea/
+*.code-workspace
