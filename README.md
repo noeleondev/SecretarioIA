@@ -1,5 +1,3 @@
-
-
 # 🤖 Secretario IA V3
 
 Asistente personal de IA local y gratuito para gestión de agenda y estudio.
@@ -25,10 +23,10 @@ colaborativo.
 ## ✨ Características
 
 - 📅 **Gestión de agenda**: Crea, consulta y completa tareas.
-- 📚 **Organización de libros**: Extrae la estructura de tus apuntes en Markdown.
-- 🧠 **IA local**: Usa LM Studio con modelos como `Qwen3-4B-2507`.
-- 🎓 **Sistema de estudio**: Divide temas en pasos pequeños y te guía.
-- 🔒 **100% offline**: Tus datos nunca salen de tu PC.
+- 📚 **Organización de libros**: Extrae la estructura de apuntes en  formato Markdown.
+- 🧠 **IA local**: Usa LM Studio con modelos ligeros de peso abierto como `Qwen3-4B-2507`.
+- 🎓 **Sistema de estudio**: Divide temas en pasos pequeños y proporsiona guías de aprendiazje.
+- 🔒 **100% local**: los datos y chats nunca salen de tu PC.
 - 🤝 **Comunitario**: Diseñado para colaborar con compañeros.
 
 ---
@@ -44,73 +42,44 @@ colaborativo.
 
 ---
 
-## 🚀 Instalación Completa (Paso a Paso)
+## 🚀 Requisitos previos
 
-### 📦 Paso 1: Instalar Python 3.11.9
-
-**Descarga:** [python.org](https://www.python.org/downloads/release/python-3119/)
-
-1. Ve al enlace de descarga.
-2. Busca **"Windows installer (64-bit)"** y descárgalo.
-3. Ejecuta el instalador.
-4. ⚠️ **MUY IMPORTANTE:** Marca la casilla **"Add python.exe to PATH"**.
-5. Haz clic en **"Install Now"**.
-6. Espera a que termine (2-3 minutos).
-7. Haz clic en **"Close"**.
+- **Python 3.11.9** - [Descargar](https://www.python.org/downloads/release/python-3119/)
+- **Git** - [Descarga](https://git-scm.com/download/win)
+- LM Studio - [Descarga](https://lmstudio.ai/)
 
 **Verifica la instalación:**
-
-Abre una **nueva ventana de CMD** (importante: nueva) y escribe:
-
 ```bash
 python --version
-```
-
-Debe mostrar:
-```
-Python 3.11.9
-```
-
----
-
-### 📦 Paso 2: Instalar Git
-
-**Descarga:** [git-scm.com](https://git-scm.com/download/win)
-
-1. Ve al enlace de descarga.
-2. Descarga **"64-bit Git for Windows Setup"**.
-3. Ejecuta el instalador.
-4. Deja todas las opciones por defecto.
-5. Haz clic en **"Install"**.
-6. Espera a que termine.
-7. Haz clic en **"Finish"**.
-
-**Verifica la instalación:**
-
-Abre una **nueva ventana de CMD** y escribe:
-
-```bash
 git --version
 ```
 
-Debe mostrar algo como:
-```
-git version 2.46.0.windows.1
-```
+## 📁 Estructura del Proyecto
 
+```
+SecretarioIA/
+├── Almacenamiento/          # Bóveda de Obsidian (no se sube a Git)
+│   └── vault/               # Tus apuntes
+│
+└── Scripts/                 # Código del bot (esto se sube a Git)
+    ├── config/              # Archivos de configuración
+    ├── data/                # Datos del bot
+    ├── docs/                # Documentación
+    ├── logs/                # Registros (no se suben)
+    ├── src/                 # Código fuente
+    ├── tests/               # Tests
+    ├── .env.example         # Plantilla de variables de entorno
+    ├── .gitignore           # Archivos ignorados por Git
+    ├── README.md            # Este archivo
+    ├── requirements.txt     # Dependencias
+    ├── run.bat              # Script de inicio (Windows)
+    ├── run.sh               # Script de inicio (Linux/Mac)
+    └── setup.bat            # Script de configuración inicial
+```
 ---
 
-### 📦 Paso 3: Instalar LM Studio
-
-**Descarga:** [lmstudio.ai](https://lmstudio.ai/)
-
-1. Ve al enlace de descarga.
-2. Descarga la versión para Windows.
-3. Ejecuta el instalador.
-4. Sigue las instrucciones.
-5. Abre LM Studio.
-
-**Descargar el modelo:**
+## Instalacion
+### **Descargar el modelo:**
 
 1. En LM Studio, haz clic en la pestaña **"Search"** (lupa).
 2. En la barra de búsqueda, escribe: **`Qwen3-4B-2507`**
@@ -118,7 +87,9 @@ git version 2.46.0.windows.1
 4. Haz clic en **"Download"**.
 5. Espera a que termine la descarga (aproximadamente 2.5 GB).
 
-**Iniciar el servidor:**
+--- 
+
+### Iniciar el servidor:
 
 1. Ve a la pestaña **"Server"** (icono de servidor).
 2. Haz clic en **"Start Server"**.
@@ -126,9 +97,9 @@ git version 2.46.0.windows.1
 
 > ⚠️ **IMPORTANTE:** LM Studio debe estar abierto y con el servidor activo **cada vez que uses el bot**.
 
----
+--- 
 
-### 📦 Paso 4: Clonar el repositorio
+### Clonar el repositorio
 
 Abre **CMD** y escribe:
 
@@ -151,7 +122,7 @@ Receiving objects: 100% (100/100), 50.00 KiB | 500 KiB/s, done.
 
 ---
 
-### 📦 Paso 5: Ejecutar la configuración inicial
+### Ejecutar la configuración inicial
 
 Dentro de la carpeta `Scripts`, ejecuta:
 
@@ -205,7 +176,7 @@ Presione una tecla para continuar...
 
 ---
 
-### 📦 Paso 6: Configurar el token de Telegram
+### Configurar el token de Telegram
 
 **El script `setup.bat` abrirá automáticamente el Bloc de notas con el archivo `.env`.**
 
@@ -241,7 +212,7 @@ Presione una tecla para continuar...
 
 ---
 
-### 📦 Paso 7: Ejecutar el bot
+### Ejecutar el bot
 
 En la misma terminal, ejecuta:
 
@@ -280,7 +251,7 @@ Presiona Ctrl+C para detener
 
 ---
 
-### 📦 Paso 8: Probar el bot en Telegram
+## 🎮 Cómo Usar el Bot
 
 1. Abre **Telegram**.
 2. Busca tu bot por su nombre de usuario (ej. `@mi_secretario_bot`).
@@ -315,8 +286,7 @@ Agenda estudiar cálculo para matemáticas el jueves
 **¡Felicidades! El bot está funcionando correctamente.**
 
 ---
-
-## 🎮 Cómo Usar el Bot
+## Funcionalidades principales
 
 ### 📅 Comandos de Agenda
 
@@ -468,31 +438,6 @@ También puedes enviar **mensajes de voz** en lugar de texto. El bot los transcr
 | **Progreso** | `/progreso ingles` | Muestra el progreso |
 
 > **Nota:** Los comandos de estudio están en desarrollo y pueden cambiar.
-
----
-
-## 📁 Estructura del Proyecto
-
-```
-SecretarioIA/
-├── Almacenamiento/          # Bóveda de Obsidian (no se sube a Git)
-│   └── vault/               # Tus apuntes
-│
-└── Scripts/                 # Código del bot (esto se sube a Git)
-    ├── config/              # Archivos de configuración
-    ├── data/                # Datos del bot
-    ├── docs/                # Documentación
-    ├── logs/                # Registros (no se suben)
-    ├── src/                 # Código fuente
-    ├── tests/               # Tests
-    ├── .env.example         # Plantilla de variables de entorno
-    ├── .gitignore           # Archivos ignorados por Git
-    ├── README.md            # Este archivo
-    ├── requirements.txt     # Dependencias
-    ├── run.bat              # Script de inicio (Windows)
-    ├── run.sh               # Script de inicio (Linux/Mac)
-    └── setup.bat            # Script de configuración inicial
-```
 
 ---
 
