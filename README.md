@@ -1,5 +1,5 @@
 
-```markdown
+
 # 🤖 Secretario IA V3
 
 Asistente personal de IA local y gratuito para gestión de agenda y estudio.
