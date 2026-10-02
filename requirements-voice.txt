@@ -1,0 +1,16 @@
+# ============================================
+# DEPENDENCIAS OPCIONALES PARA VOZ
+# ============================================
+# Solo si quieres usar mensajes de voz
+# ============================================
+# NOTA: openai-whisper se instala desde GitHub
+# porque la version de PyPI tiene un bug con
+# setuptools modernos.
+# ============================================
+
+# Reproduccion de audio
+sounddevice==0.4.6
+soundfile==0.12.1
+
+# NOTA: openai-whisper se instala en setup.bat
+# desde GitHub, no desde este archivo.
