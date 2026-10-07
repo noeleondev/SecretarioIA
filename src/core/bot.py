@@ -7,6 +7,7 @@ Conecta todos los módulos y gestiona los comandos del usuario.
 
 import logging
 from pathlib import Path
+from typing import Dict, Any, Optional
 from telegram import Update
 from telegram.ext import (
     Application,
@@ -15,6 +16,7 @@ from telegram.ext import (
     filters,
     ContextTypes,
 )
+
 
 from src.core.config import Config
 from src.modules.agenda import AgendaManager
